@@ -1,0 +1,452 @@
+[
+  {
+    "id": "who_europe_online_lives_offline_consequences",
+    "url": "https://www.who.int/europe/news/item/23-05-2025-online-lives--offline-consequences",
+    "source": "WHO Europe",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_europe_online_lives_offline_consequences.txt",
+    "text_chars": 9300
+  },
+  {
+    "id": "who_pdf_hbsc_digital_social_media_fact_sheet",
+    "url": "https://iris.who.int/server/api/core/bitstreams/30bc5231-b9de-45fa-9e25-eb329c23689f/content",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pdf_hbsc_digital_social_media_fact_sheet.txt",
+    "text_chars": 4970
+  },
+  {
+    "id": "who_fact_mental_health_strengthening",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_fact_mental_health_strengthening.txt",
+    "text_chars": 10638
+  },
+  {
+    "id": "who_pub_children_young_people_service_guidance",
+    "url": "https://www.who.int/publications/i/item/9789240100374",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_children_young_people_service_guidance.txt",
+    "text_chars": 3996
+  },
+  {
+    "id": "who_activities_child_adolescent_brain_health",
+    "url": "https://www.who.int/activities/improving-the-mental-and-brain-health-of-children-and-adolescents",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_activities_child_adolescent_brain_health.txt",
+    "text_chars": 13083
+  },
+  {
+    "id": "who_europe_activities_child_adolescent_mh",
+    "url": "https://www.who.int/europe/activities/addressing-child-and-adolescent-mental-health",
+    "source": "WHO Europe",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_europe_activities_child_adolescent_mh.txt",
+    "text_chars": 8638
+  },
+  {
+    "id": "samhsa_school_behavioral_health_resources_youth",
+    "url": "https://www.samhsa.gov/mental-health/children-and-families/school-health/resources",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_school_behavioral_health_resources_youth.txt",
+    "text_chars": 62116
+  },
+  {
+    "id": "samhsa_coping_resources_children_families",
+    "url": "https://www.samhsa.gov/mental-health/children-and-families/coping-resources",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_coping_resources_children_families.txt",
+    "text_chars": 55458
+  },
+  {
+    "id": "samhsa_project_aware",
+    "url": "https://www.samhsa.gov/mental-health/children-and-families/school-health/project-aware",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_project_aware.txt",
+    "text_chars": 54515
+  },
+  {
+    "id": "who_pub_excessive_devices",
+    "url": "https://www.who.int/publications/i/item/9789241509367",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_excessive_devices.txt",
+    "text_chars": 4811
+  },
+  {
+    "id": "who_pub_under5_activity_sleep",
+    "url": "https://www.who.int/publications/i/item/9789241550536",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_under5_activity_sleep.txt",
+    "text_chars": 4246
+  },
+  {
+    "id": "who_pub_digital_health_strategy",
+    "url": "https://www.who.int/publications/i/item/9789240020924",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_digital_health_strategy.txt",
+    "text_chars": 3479
+  },
+  {
+    "id": "who_pdf_digital_strategy",
+    "url": "https://www.who.int/docs/default-source/documents/gs4dhdaa2a9f352b0445bafbc79ca799dce4d.pdf",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pdf_digital_strategy.txt",
+    "text_chars": 103099
+  },
+  {
+    "id": "who_pub_digital_health_2027",
+    "url": "https://www.who.int/publications/i/item/9789240116870",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_digital_health_2027.txt",
+    "text_chars": 3437
+  },
+  {
+    "id": "who_pub_youth_centred_digital",
+    "url": "https://www.who.int/publications/i/item/9789240011717",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_youth_centred_digital.txt",
+    "text_chars": 4210
+  },
+  {
+    "id": "who_pub_digital_interventions_guideline",
+    "url": "https://www.who.int/publications/i/item/9789241550505",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_digital_interventions_guideline.txt",
+    "text_chars": 4251
+  },
+  {
+    "id": "who_pdf_digital_interventions_full",
+    "url": "https://iris.who.int/bitstream/handle/10665/311941/9789241550505-eng.pdf?ua=1",
+    "source": "WHO",
+    "ok": false,
+    "error": "PdfStreamError: Stream has ended unexpectedly",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "who_pub_diig",
+    "url": "https://www.who.int/publications/i/item/9789240010567",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_pub_diig.txt",
+    "text_chars": 4207
+  },
+  {
+    "id": "who_euro_digital_determinants_youth",
+    "url": "https://www.who.int/europe/publications/i/item/WHO-EURO-2025-12187-51959-79685",
+    "source": "WHO Europe",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_euro_digital_determinants_youth.txt",
+    "text_chars": 5163
+  },
+  {
+    "id": "who_europe_teens_screens_mental_health",
+    "url": "https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health",
+    "source": "WHO Europe",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_europe_teens_screens_mental_health.txt",
+    "text_chars": 11872
+  },
+  {
+    "id": "who_wp_digital_youth_mental_health",
+    "url": "https://www.who.int/westernpacific/newsroom/events/overview/item/2026/04/16/western-pacific-events/mental-health-and-digital-use-for-youth",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_wp_digital_youth_mental_health.txt",
+    "text_chars": 5867
+  },
+  {
+    "id": "who_fact_adolescent_mental_health",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health",
+    "source": "WHO",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/who_fact_adolescent_mental_health.txt",
+    "text_chars": 13499
+  },
+  {
+    "id": "samhsa_hub_online_safety",
+    "url": "https://www.samhsa.gov/mental-health/children-and-families/online-health-and-safety-for-children-and-youth",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_hub_online_safety.txt",
+    "text_chars": 56143
+  },
+  {
+    "id": "samhsa_mh_children_families",
+    "url": "https://www.samhsa.gov/mental-health/children-and-families",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_mh_children_families.txt",
+    "text_chars": 53679
+  },
+  {
+    "id": "samhsa_mental_health_overview",
+    "url": "https://www.samhsa.gov/mental-health",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_mental_health_overview.txt",
+    "text_chars": 55034
+  },
+  {
+    "id": "samhsa_task_force_safe_internet",
+    "url": "https://www.samhsa.gov/kids-online-health-safety-task-force/kohs-report-safe-internet-use",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_task_force_safe_internet.txt",
+    "text_chars": 56143
+  },
+  {
+    "id": "samhsa_pdf_kohs_report",
+    "url": "https://www.samhsa.gov/sites/default/files/online-health-safety-children-youth-report.pdf",
+    "source": "SAMHSA",
+    "ok": false,
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://www.samhsa.gov/sites/default/files/online-health-safety-children-youth-report.pdf",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "samhsa_pdf_social_media_youth",
+    "url": "https://www.samhsa.gov/sites/default/files/kohs-social-media-internet-youth-mental-health-factsheet.pdf",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_pdf_social_media_youth.txt",
+    "text_chars": 5825
+  },
+  {
+    "id": "samhsa_pdf_healthy_media_relationships",
+    "url": "https://www.samhsa.gov/sites/default/files/building-healthy-relationships-with-media-activities.pdf",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_pdf_healthy_media_relationships.txt",
+    "text_chars": 16902
+  },
+  {
+    "id": "samhsa_lib_kohs",
+    "url": "https://library.samhsa.gov/product/online-health-safety-best-practices-families-guidance/pep24-01-012",
+    "source": "SAMHSA",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://library.samhsa.gov/product/online-health-safety-best-practices-families-guidance/pep24-01-012",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "samhsa_lib_bullying_conversation_cards",
+    "url": "https://library.samhsa.gov/product/make-time-listen-take-time-talk-about-bullying-conversation-starter-cards/sma08-4321",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_lib_bullying_conversation_cards.txt",
+    "text_chars": 12416
+  },
+  {
+    "id": "samhsa_social_media_guidelines",
+    "url": "https://www.samhsa.gov/about/news-announcements/social-media",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_social_media_guidelines.txt",
+    "text_chars": 53369
+  },
+  {
+    "id": "samhsa_find_support",
+    "url": "https://www.samhsa.gov/find-support",
+    "source": "SAMHSA",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/samhsa_find_support.txt",
+    "text_chars": 53085
+  },
+  {
+    "id": "hhs_sg_social_media_advisory_pdf",
+    "url": "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf",
+    "source": "HHS OSG",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "hhs_sg_social_media_summary_pdf",
+    "url": "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf",
+    "source": "HHS OSG",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-summary.pdf",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "hhs_sg_social_media_page",
+    "url": "https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
+    "source": "HHS OSG",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hhs.gov/surgeongeneral/priorities/youth-mental-health/social-media/index.html",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "hhs_sg_protecting_youth_mental_health_pdf",
+    "url": "https://www.hhs.gov/sites/default/files/surgeon-general-youth-mental-health-advisory.pdf",
+    "source": "HHS OSG",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hhs.gov/sites/default/files/surgeon-general-youth-mental-health-advisory.pdf",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "hhs_youth_mental_health_hub",
+    "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/index.html",
+    "source": "HHS OSG",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/index.html",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "nimh_social_media_youth_research",
+    "url": "https://www.nimh.nih.gov/funding/grant-writing-and-application-process/concept-clearances/2022/understanding-social-media-and-youth-mental-health",
+    "source": "NIMH",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/nimh_social_media_youth_research.txt",
+    "text_chars": 10364
+  },
+  {
+    "id": "nimh_workshop_digital_media_development",
+    "url": "https://www.nimh.nih.gov/news/events/2024/nichd-nimh-workshop-impact-of-technology-and-digital-media-on-child-and-adolescent-development-and-mental-health",
+    "source": "NIMH",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/nimh_workshop_digital_media_development.txt",
+    "text_chars": 17408
+  },
+  {
+    "id": "nimh_shareables_child_adolescent",
+    "url": "https://www.nimh.nih.gov/get-involved/digital-shareables/shareable-resources-on-child-and-adolescent-mental-health",
+    "source": "NIMH",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/nimh_shareables_child_adolescent.txt",
+    "text_chars": 12953
+  },
+  {
+    "id": "nimh_digital_shareables_hub",
+    "url": "https://www.nimh.nih.gov/get-involved/digital-shareables",
+    "source": "NIMH",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/nimh_digital_shareables_hub.txt",
+    "text_chars": 8893
+  },
+  {
+    "id": "cdc_mental_health_hub",
+    "url": "https://www.cdc.gov/mental-health/index.html",
+    "source": "CDC",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/cdc_mental_health_hub.txt",
+    "text_chars": 3415
+  },
+  {
+    "id": "cdc_children_mental_health_about",
+    "url": "https://www.cdc.gov/children-mental-health/about/index.html",
+    "source": "CDC",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/cdc_children_mental_health_about.txt",
+    "text_chars": 12186
+  },
+  {
+    "id": "cdc_healthy_youth",
+    "url": "https://www.cdc.gov/healthy-youth/index.html",
+    "source": "CDC",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/cdc_healthy_youth.txt",
+    "text_chars": 5644
+  },
+  {
+    "id": "stopbullying_cyberbullying",
+    "url": "https://www.stopbullying.gov/cyberbullying/what-is-it",
+    "source": "stopbullying.gov",
+    "ok": false,
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.stopbullying.gov/cyberbullying/what-is-it",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "healthgov_sleep_children_teens",
+    "url": "https://health.gov/myhealthfinder/healthy-living/mental-health-and-relationships/get-enough-sleep/children-and-teenagers",
+    "source": "health.gov",
+    "ok": false,
+    "error": "HTTPError: 404 Client Error: Not Found for url: https://odphp.health.gov/myhealthfinder/healthy-living/mental-health-and-relationships/get-enough-sleep/children-and-teenagers",
+    "text_path": null,
+    "text_chars": 0
+  },
+  {
+    "id": "medlineplus_screen_time",
+    "url": "https://medlineplus.gov/ency/patientinstructions/000355.htm",
+    "source": "NIH MedlinePlus",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/medlineplus_screen_time.txt",
+    "text_chars": 7804
+  },
+  {
+    "id": "medlineplus_sleep_children",
+    "url": "https://medlineplus.gov/ency/patientinstructions/000692.htm",
+    "source": "NIH MedlinePlus",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/medlineplus_sleep_children.txt",
+    "text_chars": 8606
+  },
+  {
+    "id": "988_lifeline",
+    "url": "https://988lifeline.org/",
+    "source": "988 Lifeline",
+    "ok": true,
+    "error": null,
+    "text_path": "data/knowledge/scraped/text/988_lifeline.txt",
+    "text_chars": 3577
+  }
+]
