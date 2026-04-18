@@ -1,4 +1,9 @@
-This Project is split into four parts.
+Project Overview
+
+This project builds a data-driven system for modeling social media behavior and assessing user risk. It includes behavioral feature engineering, machine learning-based risk prediction, and retrieval-based recommendation using public health resources.
+
+The repository is organized into four main components (Methods 1–4), each corresponding to a stage in the pipeline.
+
 We start with data from users regarding various social media usage habits, in step 1 we will process this data
 to be used for modeling risk and retrieving recommendations. In step 2, we will create a model to determine 
 whether a user is at risk of social media addiction. In step 3, we will scrape resources from WHO, SAMHSA, and other U.S. federal resources.
