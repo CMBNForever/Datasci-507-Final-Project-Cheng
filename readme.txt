@@ -63,7 +63,7 @@ retain Addiction_Level and ProductivityLoss as target labels (not used as featur
 output the final behavioral profile dataset as: behavior_profile_dataset.csv
 
 Acknowledgments:
-This script supports the Method 1 component of the EECS 486 final project on Impact of Social Media on Mental Health, providing the core behavioral representation used for both classification and retrieval modules.
+This script supports the Method 1 component of the Datasci 507 final project on Impact of Social Media on Mental Health, providing the core behavioral representation used for both classification and retrieval modules.
 -
 
 -
@@ -93,7 +93,7 @@ When executed, the script will:
         xgb_feature_cols.pkl (feature column order)
 
 Acknowledgments:
-This script supports the Method 2 component of the EECS 486 final project on Impact of Social Media on Mental Health, providing the risk scoring model used by downstream demo and retrieval components.
+This script supports the Method 2 component of the Datasci 507 final project on Impact of Social Media on Mental Health, providing the risk scoring model used by downstream demo and retrieval components.
 -
 
 -
@@ -153,7 +153,7 @@ When executed, the script will:
 
 
 Acknowledgments
-This script supports the method 4 part of the EECS 486 final project on Impact of Social Media on Mental Health.
+This script supports the method 4 part of the Datasci 507 final project on Impact of Social Media on Mental Health.
 -
 
 -
