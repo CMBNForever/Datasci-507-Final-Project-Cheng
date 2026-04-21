@@ -16,14 +16,14 @@ from sklearn.metrics import (
 )
 
 
-# ── 1. 数据加载 ────────────────────────────────────────────
+# ── 1.load ────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent
 df = pd.read_csv(ROOT / 'data' / 'behavior_profile_dataset.csv')
 
 print("数据维度:", df.shape)
 print("\n标签分布:\n", df['risk_binary'].value_counts())
 
-# ── 2. 特征和标签分离 ──────────────────────────────────────
+# ── 2. separate features and labels ──────────────────────────────────────
 drop_cols = ['risk_binary', 'Addiction_Level', 
              'Self_Control', 'ProductivityLoss', 'self_reg_risk']
 
@@ -31,22 +31,22 @@ X = df.drop(columns=drop_cols)
 y = df['risk_binary']
 
 
-# ── 3. 泄露诊断（训练前先检查）─────────────────────────────
+# ── 3. leak check ─────────────────────────────
 corr = df.corr()['risk_binary'].abs().sort_values(ascending=False)
 print(corr)
 
-# ── 3. 先切出独立 test set ─────────────────────────────────
+# ── 3. test set ─────────────────────────────────
 X_train_full, X_test, y_train_full, y_test = train_test_split(
     X, y,
-    test_size    = 0.2,       # 80% 训练，20% 测试
-    stratify     = y,         # 保证正负样本比例一致
+    test_size    = 0.2,       # 80% train，20% test
+    stratify     = y,         # same proportion
     random_state = 42
 )
 
-print(f"\n训练集大小: {X_train_full.shape[0]}")
-print(f"测试集大小: {X_test.shape[0]}")
+print(f"\ntrain set size: {X_train_full.shape[0]}")
+print(f"test set size: {X_test.shape[0]}")
 
-# ── 4. 模型定义 ────────────────────────────────────────────
+# ── 4. model ────────────────────────────────────────────
 neg, pos = (y_train_full == 0).sum(), (y_train_full == 1).sum()
 
 model = xgb.XGBClassifier(
@@ -62,7 +62,7 @@ model = xgb.XGBClassifier(
     verbosity             = 0
 )
 
-# ── 5. 在训练集上做交叉验证 ────────────────────────────────
+# ── 5. cross-validation ────────────────────────────────
 skf       = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 oof_preds = np.zeros(len(y_train_full))
 fold_aucs = []
@@ -85,9 +85,7 @@ for fold, (train_idx, val_idx) in enumerate(skf.split(X_train_full, y_train_full
 
 print(f"\nCV Mean AUC: {np.mean(fold_aucs):.4f} ± {np.std(fold_aucs):.4f}")
 
-# ── 6. 用全部训练集重新训练最终模型 ───────────────────────
-# 交叉验证只用来评估，最终模型要用全量训练数据训练
-# 从训练集内部切 10% 做早停 val，避免 test set 泄露
+# ── 6. final model ───────────────────────
 X_tr_final, X_val_final, y_tr_final, y_val_final = train_test_split(
     X_train_full, y_train_full,
     test_size    = 0.1,
@@ -101,7 +99,7 @@ model.fit(
     verbose  = False
 )
 
-# ── 7. 在 test set 上评估最终性能 ──────────────────────────
+# ── 7. evaluation ──────────────────────────
 test_preds = model.predict_proba(X_test)[:, 1]
 test_auc   = roc_auc_score(y_test, test_preds)
 y_pred     = (test_preds > 0.5).astype(int)
@@ -110,7 +108,7 @@ print(f"\nTest AUC: {test_auc:.4f}")
 print("\nClassification Report (Test Set):")
 print(classification_report(y_test, y_pred, target_names=['Low Risk', 'High Risk']))
 
-# ── 8. 阈值选择 ────────────────────────────────────────────
+# ── 8. threshold ────────────────────────────────────────────
 # ROC Curve
 fpr, tpr, roc_thresholds = roc_curve(y_test, test_preds)
 plt.figure(figsize=(6, 5))
@@ -135,24 +133,22 @@ plt.tight_layout()
 plt.savefig('pr_curve.png', dpi=150)
 plt.show()
 
-# 最优阈值：Recall >= 0.90 前提下 Precision 最高
 min_recall = 0.90
 valid_idx  = np.where(recall[:-1] >= min_recall)[0]
 best_idx   = valid_idx[np.argmax(precision[valid_idx])]
 best_threshold = pr_thresholds[best_idx]
 
-print(f"\n最优阈值: {best_threshold:.4f}")
-print(f"对应 Precision: {precision[best_idx]:.4f}")
-print(f"对应 Recall:    {recall[best_idx]:.4f}")
-print(f"被判为高风险的用户比例: {(test_preds > best_threshold).mean():.2%}")
+print(f"\nbest threshold: {best_threshold:.4f}")
+print(f"for Precision: {precision[best_idx]:.4f}")
+print(f"for Recall:    {recall[best_idx]:.4f}")
+print(f"high risk user proportion: {(test_preds > best_threshold).mean():.2%}")
 
-# 用最优阈值重新评估
 y_pred_best = (test_preds > best_threshold).astype(int)
-print("\nClassification Report (最优阈值):")
+print("\nClassification Report (best threshold):")
 print(classification_report(y_test, y_pred_best,
                              target_names=['Low Risk', 'High Risk']))
 
-# 混淆矩阵
+# confusion matrix
 cm   = confusion_matrix(y_test, y_pred)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm,
                                display_labels=['Low Risk', 'High Risk'])
@@ -162,18 +158,17 @@ plt.tight_layout()
 plt.savefig('confusion_matrix.png', dpi=150)
 plt.show()
 
-# ── 9. 保存模型、阈值和特征统计量 ─────────────────────────
 joblib.dump(model, 'xgb_filter.pkl')
 joblib.dump(best_threshold, 'xgb_threshold.pkl')
 joblib.dump(list(X.columns), 'xgb_feature_cols.pkl')
 
-print(f"\n模型已保存: xgb_filter.pkl  阈值: {best_threshold:.4f}")
+print(f"\n model saved: xgb_filter.pkl  threshold: {best_threshold:.4f}")
 
 if shap is not None:
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_test)
 
-# 特征重要性排序
+# rank
 plt.figure()
 shap.summary_plot(shap_values, X_test, plot_type="bar", show=False)
 plt.title('SHAP Feature Importance')
@@ -181,7 +176,7 @@ plt.tight_layout()
 plt.savefig('shap_importance.png', dpi=150)
 plt.show()
 
-# 特征影响方向
+# direction
 plt.figure()
 shap.summary_plot(shap_values, X_test, show=False)
 plt.title('SHAP Summary Plot')
@@ -189,19 +184,17 @@ plt.tight_layout()
 plt.savefig('shap_summary.png', dpi=150)
 plt.show()
 
-
-# ── 11. 推理接口（供检索模块调用）─────────────────────────
 def should_retrieve(user_features: dict) -> bool:
     """
-    判断是否需要检索。
-    user_features: 与训练特征列一致的字典，例如
+    To determine whether need to retrieve.
+    user_features: dictionary that same as the training columns
         {'Daily_Usage_Time': 3.5, 'Posts_Per_Day': 2, ...}
-    返回 True 表示高风险，需要触发检索；False 表示无需检索。
+    True means high risk，need retrieve；False means no retrieve needed
     """
     _model     = joblib.load('xgb_filter.pkl')
     _threshold = joblib.load('xgb_threshold.pkl')
     _cols      = joblib.load('xgb_feature_cols.pkl')
 
-    row  = pd.DataFrame([user_features])[_cols]   # 对齐列顺序
+    row  = pd.DataFrame([user_features])[_cols]   
     prob = _model.predict_proba(row)[0, 1]
     return bool(prob >= _threshold)
