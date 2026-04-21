@@ -4,10 +4,10 @@ This project builds a data-driven system for modeling social media behavior and 
 
 The repository is organized into four main components (Methods 1–4), each corresponding to a stage in the pipeline.
 
-We start with data from users regarding various social media usage habits, in step 1 we will process this data
-to be used for modeling risk and retrieving recommendations. In step 2, we will create a model to determine 
-whether a user is at risk of social media addiction. In step 3, we will scrape resources from WHO, SAMHSA, and other U.S. federal resources.
-Based on this corpus of documents we will retrieve relevant results for the user. Finally in step 4, we will perform an
+I start with data from users regarding various social media usage habits, in step 1 I will process this data
+to be used for modeling risk and retrieving recommendations. In step 2, I will create a model to determine 
+whether a user is at risk of social media addiction. In step 3, I will scrape resources from WHO, SAMHSA, and other U.S. federal resources.
+Based on this corpus of documents I will retrieve relevant results for the user. Finally in step 4, I will perform an
 analysis on the user data to determine what variable contributes most to the multiclass risk prediction.
 
 Method 1: Profile processing
@@ -160,7 +160,7 @@ This script supports the method 4 part of the Datasci 507 final project on Impac
 Presentation Demo: (MUST BE RUN AFTER ALL METHODS COMPELTE)
 
 Description:
-For our in-class demo, we built a Streamlit web app that mirrors the functionality of the Method 3 terminal demo. It lets a user either select a sample profile or enter their own questionnaire responses, then shows a short profile summary and retrieves relevant guidance excerpts. If an API key is provided, it also generates brief, evidence-grounded recommendations based on the retrieved passages.
+For our in-class demo, I built a Streamlit web app that mirrors the functionality of the Method 3 terminal demo. It lets a user either select a sample profile or enter their own questionnaire responses, then shows a short profile summary and retrieves relevant guidance excerpts. If an API key is provided, it also generates brief, evidence-grounded recommendations based on the retrieved passages.
 
 Usage:
 Run from the project root:
