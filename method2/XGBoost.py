@@ -20,8 +20,8 @@ from sklearn.metrics import (
 ROOT = Path(__file__).resolve().parent.parent
 df = pd.read_csv(ROOT / 'data' / 'behavior_profile_dataset.csv')
 
-print("数据维度:", df.shape)
-print("\n标签分布:\n", df['risk_binary'].value_counts())
+print("data dimension:", df.shape)
+print("\n label distribution:\n", df['risk_binary'].value_counts())
 
 # ── 2. separate features and labels ──────────────────────────────────────
 drop_cols = ['risk_binary', 'Addiction_Level', 
